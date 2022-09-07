@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+Actualités - Unicef Deux-Sèvres (79)
+{% endblock %}
+
+{% block css %}
+<link href="{{ asset('assets/css/news.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block mainJs %}
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v14.0" nonce="sbYpoYxf"></script>
+{% endblock %}
+
+{% block content %}
+	<div class="container col-md-8 offset-md-2 mt-3 mb-5">
+
+		<h1>Actualités</h1>
+		<div class="row mt-4 ms-1 me-1">
+            <div class="col-md-12 ps-md-5 ms-md-5 iframeBig">
+                <div class="fb-page" data-href="https://www.facebook.com/unicef.deuxsevres/" data-tabs="timeline" data-width="500" data-height="550" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/unicef.deuxsevres/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/unicef.deuxsevres/">Unicef Deux-Sèvres</a></blockquote></div>	
+            </div>
+            <div class="col-md-12 ps-md-5 ms-md-5 iframeSmall">
+                <div class="fb-page" data-href="https://www.facebook.com/unicef.deuxsevres/" data-tabs="timeline" data-width="315" data-height="550" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/unicef.deuxsevres/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/unicef.deuxsevres/">Unicef Deux-Sèvres</a></blockquote></div>
+            </div>
+{% endblock %}

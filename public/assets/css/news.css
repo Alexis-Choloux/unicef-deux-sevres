@@ -1,0 +1,12 @@
+.iframeSmall {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .iframeBig {
+        display: none;
+    }
+    .iframeSmall {
+        display: block;
+    }
+}
